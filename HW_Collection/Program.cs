@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,7 +13,7 @@ namespace HW_Collection
         {
             #region
             ///* 1. Создать коллекцию List <int> . Вывести на экран позицию и значение элемента, являющегося вторым максимальным значением в коллекции. Вывести на экран сумму элементов на четных позициях. */
-            ///* 2.	Удалить все нечетные элементы списка List<int> */
+            ///* 2 - 8.	Удалить все нечетные элементы списка List<int> */
             ///
             //List<int> dc = new List<int>();
             //Random rand = new Random();
@@ -35,7 +36,7 @@ namespace HW_Collection
             #endregion
 
             #region
-            // 3.Дана коллекция типа List<double>.Вывести на экран элементы списка, значение которых больше среднего арифметического всех элементов коллекции.
+            // 3 - 9.Дана коллекция типа List<double>.Вывести на экран элементы списка, значение которых больше среднего арифметического всех элементов коллекции.
 
             //double avgTask3 = 0;
             //List<int> gq = new List<int>();
@@ -105,6 +106,92 @@ namespace HW_Collection
             //        Console.Write(item);
             //}
             //Console.WriteLine();
+
+            #endregion
+
+            #region
+
+            /* 
+             7.	Дан файл, содержащий числа. За один просмотр файла напечатать элементы файла в следующем порядке: сначала все положительные числа,
+                    потом все отрицательные числа, сохраняя исходный порядок в каждой группе чисел.
+            */
+
+            //string numbt = @"C:\Temp\numbers.txt";
+            //Queue<int> numberst = new Queue<int>();
+
+            //Random random = new Random();
+            //for (int i = 0; i < 15; i++)
+            //{
+            //    numberst.Enqueue(random.Next(-20, 20));
+            //}
+
+            //using (StreamWriter sw = new StreamWriter(numbt))
+            //{
+            //    foreach (var i in numberst)
+            //    {
+            //        sw.WriteLine(i);
+            //    }
+            //}
+
+            //Console.ForegroundColor = ConsoleColor.Red;
+            //Console.WriteLine("Дан файл, содержащий числа.");
+            //Console.ForegroundColor = ConsoleColor.White;
+            
+            //using (StreamReader sr = new StreamReader(numbt))
+            //{
+            //    string line;
+            //    while ((line = sr.ReadLine()) != null)
+            //    {
+            //        Console.Write(line + " ");
+            //    }
+            //    Console.WriteLine();
+            //}
+
+            //Console.WriteLine();
+            //List<int> numPol = new List<int>();
+            //List<int> numOtr = new List<int>();
+            //using (StreamReader sr = new StreamReader(numbt))
+            //{
+            //    string line;
+
+            //    while ((line = sr.ReadLine()) != null)
+            //    {
+            //        string[] lin2 = line.Split(' ');
+            //        int[] linNum = new int[lin2.Length];
+            //        for (int i = 0; i < lin2.Length; i++)
+            //        {
+            //            linNum[i] = Int32.Parse(lin2[i]);
+            //            numPol.Add(linNum[i]);
+            //            if (linNum[i] < 0)
+            //            {
+            //                numOtr.Add(linNum[i]);
+            //                numPol.Remove(linNum[i]);
+            //            }
+            //        }
+            //    }
+            //    Console.ForegroundColor = ConsoleColor.Red;
+            //    Console.WriteLine("все положительные числа");
+            //    Console.ForegroundColor = ConsoleColor.White;
+                
+
+            //    foreach (var i in numPol)
+            //    {
+            //        Console.Write(i + " ");
+            //    }
+            //    Console.WriteLine();
+
+            //    Console.WriteLine();
+            //    Console.ForegroundColor = ConsoleColor.Red;
+            //    Console.WriteLine("все отрицательные числа");
+            //    Console.ForegroundColor = ConsoleColor.White;
+
+            //    foreach (var i in numOtr)
+            //    {
+            //        Console.Write(i + " ");
+            //    }
+            //    Console.WriteLine();
+            //    Console.WriteLine();
+            //}
 
             #endregion
         }
